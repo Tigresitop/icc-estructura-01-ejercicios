@@ -31,6 +31,7 @@ public class App {
         int mul = dataStructuresPrep.multiplyAlgorithm(5, 3);
         int div = dataStructuresPrep.divideWAlgorithm(15, 3);
         boolean perfect = dataStructuresPrep.isPerfectNumber(6);
+        int fac = dataStructuresPrep.getFactorial(5);
 
         /*
          * Imprimir el resultado de la operación.
@@ -50,6 +51,7 @@ public class App {
         System.out.println("El resultado de subtractAlgorithm  es: " + mul);
         System.out.println("El resultado de subtractAlgorithm  es: " + div);
         System.out.println("El resultado de subtractAlgorithm  es: " + perfect);
+        System.out.println("El resultado de subtractAlgorithm  es: " + fac);
 
     }
 }
