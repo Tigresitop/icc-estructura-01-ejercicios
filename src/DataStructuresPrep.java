@@ -100,7 +100,7 @@ public class DataStructuresPrep {
     public int getFactorial(int number) {
         int result = 1;
         for (int i = 1; i <= number; i++) {
-            result *= i;
+            result = result * i;
         }
         return result;
     }
@@ -113,7 +113,13 @@ public class DataStructuresPrep {
      *         Ejemplo: findMaximum(new int[]{1, 5, 3, 6, 8, 2}) retorna 8.
      */
     public int findMaximum(int[] numbers) {
-        throw new UnsupportedOperationException("Not yet implemented");
+        int max = numbers[0];
+        for (int i = 1; i < numbers.length; i++) {
+            if (numbers[i] > max) {
+                max = numbers[i];
+            }
+        }
+        return max;
     }
 
     /**
@@ -125,8 +131,15 @@ public class DataStructuresPrep {
      *         Ejemplo: powerAlgorithm(2, 3) retorna 8.
      */
     public int powerAlgorithm(int base, int exponent) {
-        throw new UnsupportedOperationException("Not yet implemented");
+        int potencia = base;
+
+        for (int i = 1; i < exponent; i++) {
+            potencia = potencia  * base;
+            
+        }
+        return potencia;
     }
+
 
     /**
      * Verifica si un número es primo.
@@ -136,7 +149,13 @@ public class DataStructuresPrep {
      *         Ejemplo: isPrime(5) retorna true.
      */
     public boolean isPrime(int number) {
-        throw new UnsupportedOperationException("Not yet implemented");
+        for (int i = 2; i < number / 2; i++) {
+            if (number % i == 0){
+                return false;
+            }
+            
+        }
+        return true;
     }
 
     /**
@@ -147,6 +166,14 @@ public class DataStructuresPrep {
      *         Ejemplo: countDigits(12345) retorna 5.
      */
     public int countDigits(int number) {
-        throw new UnsupportedOperationException("Not yet implemented");
+        int count = 0;
+        if (number == 0) {
+            return 1;
+        }
+        while (number != 0) {
+            number = number / 10;
+            count++;
+        }
+        return count;
     }
 }

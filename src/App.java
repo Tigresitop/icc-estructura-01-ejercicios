@@ -32,6 +32,11 @@ public class App {
         int div = dataStructuresPrep.divideWAlgorithm(15, 3);
         boolean perfect = dataStructuresPrep.isPerfectNumber(6);
         int fac = dataStructuresPrep.getFactorial(5);
+        int mayor = dataStructuresPrep.findMaximum(new int[]{1, 5, 3, 6, 8, 2});
+        int potencia = dataStructuresPrep.powerAlgorithm(2, 3);
+        boolean primo = dataStructuresPrep.isPrime(13);
+        int contador = dataStructuresPrep.countDigits(100);
+
 
         /*
          * Imprimir el resultado de la operación.
@@ -47,11 +52,15 @@ public class App {
          * como
          * parte de mensajes de salida o en lógicas de decisión más complejas.
          */
-        System.out.println("El resultado de subtractAlgorithm  es: " + resultado);
-        System.out.println("El resultado de subtractAlgorithm  es: " + mul);
-        System.out.println("El resultado de subtractAlgorithm  es: " + div);
-        System.out.println("El resultado de subtractAlgorithm  es: " + perfect);
-        System.out.println("El resultado de subtractAlgorithm  es: " + fac);
+        System.out.println("El resultado de subtractAlgorithm es: " + resultado);
+        System.out.println("El resultado de multiplyAlgorithm es: " + mul);
+        System.out.println("El resultado de divideWAlgorithm es: " + div);
+        System.out.println("El resultado de isPerfectNumber es: " + perfect);
+        System.out.println("El resultado de getFactorial es: " + fac);
+        System.out.println("El resultado de findMaximum es: " + mayor);
+        System.out.println("El resultado de powerAlgorithm es: " + potencia);
+        System.out.println("El resultado de isPrime es: " + primo);
+        System.out.println("El resultado de countDigits es: " + contador);
 
     }
 }
